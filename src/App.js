@@ -104,7 +104,7 @@ function App() {
                   fontWeight="bold"
                   color="teal.600"
                 >
-                  ${product.price}
+                  IDR {product.price}
                 </Text>
 
                 <Text
