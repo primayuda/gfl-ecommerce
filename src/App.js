@@ -144,10 +144,21 @@ function App() {
         </SimpleGrid>
       </Box>
       <Divider />
-      <Box mt={2} display='flex' justifyContent='center'>
+      <Box mt={2} display='flex' justifyContent='space-between'>
         <Text>
           Copyright Global Farmindo Lestari @2022
         </Text>
+        <LinkBox>
+          <Text>Supported by:</Text>
+          <LinkOverlay href="https://buttercms.com">
+            <Image 
+              boxSize='100px'
+              objectFit='fit'
+              src='https://res.cloudinary.com/primayuda/image/upload/v1672226012/GFL/butter-y_a1tqsy.png'
+              alt="Butter CMS logo" 
+            />
+          </LinkOverlay>
+        </LinkBox>
       </Box>
     </Container>
   );
