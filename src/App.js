@@ -137,6 +137,12 @@ function App() {
           ))}
         </SimpleGrid>
       </Box>
+      <Divider />
+      <Box mt={2} display='flex' justifyContent='center'>
+        <Text>
+          Copyright Global Farmindo Lestari @2022
+        </Text>
+      </Box>
     </Container>
   );
 }
