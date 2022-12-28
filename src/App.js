@@ -7,6 +7,8 @@ import {
   Button,
   SimpleGrid,
   Flex,
+  LinkBox,
+  LinkOverlay,
 } from "@chakra-ui/react";
 import { FiShoppingCart, FiShoppingBag } from "react-icons/fi";
 import { useState, useEffect } from "react";
@@ -32,15 +34,19 @@ function App() {
   return (
     <Container maxW="container.xl" h="100vh" >
       <Flex justifyContent="space-between" alignContent="center">
-      <Image
-        boxSize='100px'
-        objectFit='cover'
-        borderRadius='full'
-        shadow='lg'
-        _hover={{ shadow: "dark-lg" }}
-        src='https://res.cloudinary.com/primayuda/image/upload/v1669772023/GFL/logo_gfl_thjkwy.jpg'
-        alt='Logo GFL'
-      />
+      <LinkBox>     
+        <LinkOverlay href="https://globalfarmindolestari.com" isExternal>
+          <Image
+            boxSize='100px'
+            objectFit='cover'
+            borderRadius='full'
+            shadow='lg'
+            _hover={{ shadow: "dark-lg" }}
+            src='https://res.cloudinary.com/primayuda/image/upload/v1669772023/GFL/logo_gfl_thjkwy.jpg'
+            alt='Logo GFL'
+          />
+        </LinkOverlay>
+      </LinkBox>
         <Button
           my="5px"
           colorScheme="green"
