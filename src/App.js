@@ -32,16 +32,15 @@ function App() {
   return (
     <Container maxW="container.xl" h="100vh" >
       <Flex justifyContent="space-between" alignContent="center">
-        <Text
-          as="a"
-          href="/"
-          fontSize="2rem"
-          color="gray.900"
-          fontFamily="Robo"
-          my="5px"
-        >
-          Global Farmindo Lestari - E-commerce website
-        </Text>
+      <Image
+        boxSize='100px'
+        objectFit='cover'
+        borderRadius='full'
+        shadow='lg'
+        _hover={{ shadow: "dark-lg" }}
+        src='https://res.cloudinary.com/primayuda/image/upload/v1669772023/GFL/logo_gfl_thjkwy.jpg'
+        alt='Logo GFL'
+      />
         <Button
           my="5px"
           colorScheme="green"
@@ -104,7 +103,7 @@ function App() {
                   fontWeight="bold"
                   color="teal.600"
                 >
-                  IDR {product.price}
+                  IDR {product.price.toLocaleString()}
                 </Text>
 
                 <Text
