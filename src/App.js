@@ -35,7 +35,7 @@ function App() {
     <Container maxW="container.xl" h="100vh" >
       <Flex justifyContent="space-between" alignContent="center">
       <LinkBox>     
-        <LinkOverlay href="https://globalfarmindolestari.com" isExternal>
+        <LinkOverlay href="https://globalfarmindolestari.carrd.co/" isExternal>
           <Image
             boxSize='100px'
             objectFit='cover'
